@@ -1,3 +1,13 @@
 body{
-  color: red;
+  color: red; background-color: gray;
+}
+
+h1{
+  color: blue;
+  font-size: 15px;
+}
+
+.abc{
+  Font-size:10px;
+  color: blue;
 }
