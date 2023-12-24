@@ -1,6 +1,12 @@
+/*body{*/
+/*  color: pink; background-color: gray;*/
+/*}*/
+/*css写経２時間目学習時に記載↑*/
+
 body{
-  color: pink; background-color: gray;
+  font-family: serif
 }
+
 
 h1{
   color: blue;
