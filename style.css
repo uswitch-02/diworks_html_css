@@ -1,5 +1,5 @@
 body{
-  color: red; background-color: gray;
+  color: pink; background-color: gray;
 }
 
 h1{
@@ -10,4 +10,24 @@ h1{
 .abc{
   Font-size:10px;
   color: blue;
+}
+
+.xyz{
+  color: brown;
+  background-color: black;
+}
+
+/*p{*/
+/*  color: red;*/
+/*}*/
+
+#aisatsu{
+  font-size: 20px;
+  color: green;
+}
+
+#orei{
+  font-size:
+  30px; color:
+  yellow;
 }
