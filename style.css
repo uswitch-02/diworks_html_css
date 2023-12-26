@@ -1,91 +1,101 @@
 /*css写経３時間目記載内容*/
 
-body{
-  font-family: serif
+h1{
+  border-left:5px solid black;
+  border-bottom:2px solid black;
 }
-.hello{
-  text-align:center;
-}
-h2{
-  text-align: left;
-  font-size: 40px;
-  color: blue;
-}
-h2.no1{
-  color:red;
+.main{
+  color: blue; border-left:10px
+  solid red;
+  border-bottom: 5px solid red;
 }
 
-h2.no2{
-  color: blue
-}
-.a{
-  color: red;
-  text-align: left;
-}
+/*body{*/
+/*  font-family: serif*/
+/*}*/
+/*.hello{*/
+/*  text-align:center;*/
+/*}*/
+/*h2{*/
+/*  text-align: left;*/
+/*  font-size: 40px;*/
+/*  color: blue;*/
+/*}*/
+/*h2.no1{*/
+/*  color:red;*/
+/*}*/
 
-.b{
-  font-size: 30px;
-}
+/*h2.no2{*/
+/*  color: blue*/
+/*}*/
+/*.a{*/
+/*  color: red;*/
+/*  text-align: left;*/
+/*}*/
 
-.ab{
-  background-color: green;
-}
+/*.b{*/
+/*  font-size: 30px;*/
+/*}*/
 
-.abc{
+/*.ab{*/
+/*  background-color: green;*/
+/*}*/
+
+/*.abc{*/
   /*font-size: 20px;*/
-  font-family: "meiryo",serif;
-  font-size: 30px;
-  text-align: left;
-  color: blue;
-}
-.XYZ{
-  color: yellow;
-}
+/*  font-family: "meiryo",serif;*/
+/*  font-size: 30px;*/
+/*  text-align: left;*/
+/*  color: blue;*/
+/*}*/
+/*.XYZ{*/
+/*  color: yellow;*/
+/*}*/
 
-.xyz{
-  color: yellow;
-}
-ul{
-  list-style-type: none;
+/*.xyz{*/
+/*  color: yellow;*/
+/*}*/
+/*ul{*/
+/*  list-style-type: none;*/
   /*４時間目記載内容*/
-  color: red;
-  font-size: 30px;
-}
-.nol{
-  color: red;
-}
+/*  color: red;*/
+/*  font-size: 30px;*/
+/*}*/
+/*.nol{*/
+/*  color: red;*/
+/*}*/
 
 /*#main{*/
 /*  text-align: center;*/
 /*}*/
 
-#main{
-  color: orange;
-}
+/*#main{*/
+/*  color: orange;*/
+/*}*/
 
-#main h2{ 
-  font-size:10px;
+/*#main h2{ */
+/*  font-size:10px;*/
   
-}
+/*}*/
 
 
-.sub{
-  color: red;
-  font-size: 20px;
-}
-.word{
-  color: blue;
-  font-family: serif
-}
+/*.sub{*/
+/*  color: red;*/
+/*  font-size: 20px;*/
+/*}*/
+/*.word{*/
+/*  color: blue;*/
+/*  font-family: serif*/
+/*}*/
 
-h1,h2,h3{
-  color: green;
-}
+/*h1,h2,h3{*/
+/*  color: green;*/
+/*}*/
 
-.name,.name2{
-  color:blue;
-  text-align: center;
-}
+/*.name,.name2{*/
+/*  color:blue;*/
+/*  text-align: center;*/
+/*}*/
 
 
 
