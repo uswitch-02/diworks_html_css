@@ -19,16 +19,24 @@ h2{
   text-align: left;
   color: blue;
 }
+.XYZ{
+  color: yellow;
+}
 
 .xyz{
   color: yellow;
 }
 ul{
   list-style-type: none;
+  /*４時間目記載内容*/
+  color: red;
+  font-size: 30px;
 }
 .nol{
   color: red;
 }
+
+
 /*css写経２時間目に記載した内容↓↓↓*/
 /*body{*/
 /*  color: pink; background-color: gray;*/
