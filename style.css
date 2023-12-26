@@ -1,39 +1,65 @@
-/*body{*/
-/*  color: pink; background-color: gray;*/
-/*}*/
-/*css写経２時間目学習時に記載↑*/
+/*css写経３時間目記載内容*/
 
 body{
   font-family: serif
 }
-
-
-h1{
+.hello{
+  text-align:center;
+}
+h2{
+  text-align: left;
+  font-size: 40px;
   color: blue;
-  font-size: 15px;
 }
 
 .abc{
-  Font-size:10px;
+  /*font-size: 20px;*/
+  font-family: "meiryo",serif;
+  font-size: 30px;
+  text-align: left;
   color: blue;
 }
 
 .xyz{
-  color: brown;
-  background-color: black;
+  color: yellow;
 }
+ul{
+  list-style-type: none;
+}
+.nol{
+  color: red;
+}
+/*css写経２時間目に記載した内容↓↓↓*/
+/*body{*/
+/*  color: pink; background-color: gray;*/
+/*}*/
+
+/*h1{*/
+/*  color: blue;*/
+/*  font-size: 15px;*/
+/*}*/
+
+/*.abc{*/
+/*  Font-size:10px;*/
+/*  color: blue;*/
+/*}*/
+
+/*.xyz{*/
+/*  color: brown;*/
+/*  background-color: black;*/
+/*}*/
 
 /*p{*/
 /*  color: red;*/
 /*}*/
 
-#aisatsu{
-  font-size: 20px;
-  color: green;
-}
+/*#aisatsu{*/
+/*  font-size: 20px;*/
+/*  color: green;*/
+/*}*/
 
-#orei{
-  font-size:
-  30px; color:
-  yellow;
-}
+/*#orei{*/
+/*  font-size:*/
+/*  30px; color:*/
+/*  yellow;*/
+/*}*/
