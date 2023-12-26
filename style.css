@@ -11,6 +11,25 @@ h2{
   font-size: 40px;
   color: blue;
 }
+h2.no1{
+  color:red;
+}
+
+h2.no2{
+  color: blue
+}
+.a{
+  color: red;
+  text-align: left;
+}
+
+.b{
+  font-size: 30px;
+}
+
+.ab{
+  background-color: green;
+}
 
 .abc{
   /*font-size: 20px;*/
