@@ -36,9 +36,19 @@ ul{
   color: red;
 }
 
+/*#main{*/
+/*  text-align: center;*/
+/*}*/
+
 #main{
-  text-align: center;
+  color: orange;
 }
+
+#main h2{ 
+  font-size:10px;
+  
+}
+
 
 .sub{
   color: red;
@@ -57,6 +67,9 @@ h1,h2,h3{
   color:blue;
   text-align: center;
 }
+
+
+
 /*css写経２時間目に記載した内容↓↓↓*/
 /*body{*/
 /*  color: pink; background-color: gray;*/
