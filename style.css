@@ -36,7 +36,27 @@ ul{
   color: red;
 }
 
+#main{
+  text-align: center;
+}
 
+.sub{
+  color: red;
+  font-size: 20px;
+}
+.word{
+  color: blue;
+  font-family: serif
+}
+
+h1,h2,h3{
+  color: green;
+}
+
+.name,.name2{
+  color:blue;
+  text-align: center;
+}
 /*css写経２時間目に記載した内容↓↓↓*/
 /*body{*/
 /*  color: pink; background-color: gray;*/
