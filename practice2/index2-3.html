@@ -1,8 +1,9 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
     <title>CSSの基礎</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel ="stylesheet" type="text/css" href="practice2-3.css">
   </head>
 
@@ -25,7 +26,6 @@
         </div>
       </header>
 
-      <div class="blog">
         <div class="main-box1">
           プログラミングに役立つ情報
         </div>
@@ -34,25 +34,27 @@
           2017.<br>
           <img src="../imgs/bookstore.jpg" alt="画像が表示されます"><br>
           D.I.Blogは
-          <div class="main-bottom-kiji">
-            記事中身<br>
-            <!--flexとかで横並びにできる？？-->
-            <!--２カラムorグリットレイアウトでどない？-->
-            <div class="content1">
-              <img class="blog-image" src="../imgs/pic1.jpg">
-              <img class="blog-image" src="../imgs/pic1.jpg">
-              <img class="blog-image" src="../imgs/pic1.jpg">
-              <img class="blog-image" src="../imgs/pic1.jpg">
-            </div>
-            <div class="content2">
-              <img class="blog-image" src="../imgs/pic1.jpg">
-              <img class="blog-image" src="../imgs/pic1.jpg">
-              <img class="blog-image" src="../imgs/pic1.jpg">
-              <img class="blog-image" src="../imgs/pic1.jpg">
-            </div>
+        </div>
+
+          記事中身<br>
+          <!--flexとかで横並びにできる？？-->
+          <!--２カラムorグリットレイアウトでどない？-->
+          <!--検証上は↓にdisplay-flexかけるといい感じに横になるけど、なんかblockかかっててflexが消される-->
+          <!--なんできかねえんだあ-->
+        <div class="list-wrap">
+          <div class="content1">
+            <img class="blog-image" src="../imgs/pic1.jpg">
+            <img class="blog-image" src="../imgs/pic1.jpg">
+            <img class="blog-image" src="../imgs/pic1.jpg">
+            <img class="blog-image" src="../imgs/pic1.jpg">
+          </div>
+          <div class="content2">
+            <img class="blog-image" src="../imgs/pic1.jpg">
+            <img class="blog-image" src="../imgs/pic1.jpg">
+            <img class="blog-image" src="../imgs/pic1.jpg">
+            <img class="blog-image" src="../imgs/pic1.jpg">
           </div>
         </div>
-      </div>
 
       <div class="sidebar">
         <div class="box2">
