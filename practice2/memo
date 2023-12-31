@@ -1,0 +1,41 @@
+◎記事を２列で表示するときに参考にしたサイト◎
+
+https://qiita.com/NonGlutinousRice/items/1c7870f5d0e4838d35a0
+【グリットレイアウトで２列の記事を制作する】
+https://webukatu.com/wordpress/blog/32340/#2
+【２カラムを作る３つの方法】
+
+◎画像がうまく出せなかったときに確認した事◎
+
+・表記ミス→srcになってるか？
+・パスはあってるか？→ディレクトリ構造に対して表記はあってるか？
+
+◎解決に至った説明◎
+
+- images/
+    - diblog_logo.jpg
+- html/
+    - index.html
+この場合、index.html ファイルが images ディレクトリの1つ上のディレクトリ内にあり、
+diblog_logo.jpg を参照したいとします。
+
+その場合、
+index.html における画像のパスは次のようになります:
+<img src="../images/diblog_logo.jpg" alt="サンプル画像">
+
+../ は1つ上のディレクトリを示し、その後に images/diblog_logo.jpg が続くことで、
+index.html ファイルから見て images ディレクトリ内の diblog_logo.jpg を参照することができます。
+
+htmlディレクトリの中にimageディレクトリがある場合、そのディレクトリ構造は次のようになるでしょう：
+- html/
+    - images/
+        - diblog_logo.jpg
+    - index.html
+
+この場合、index.html ファイルから 
+images ディレクトリ内の diblog_logo.jpg を参照するためのパスは次のようになります：
+<img src="images/diblog_logo.jpg" alt="サンプル画像">
+
+ここでは、index.html から見て、
+同じ階層にある images ディレクトリ内の diblog_logo.jpg を指定するために、
+images/diblog_logo.jpg という相対パスを使っています。
