@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
-.content1{
-  justify-content: center;
-}
+/*display flexを使うときの記述*/
+/*.content1{*/
+/*  justify-content: center;*/
+/*}*/
