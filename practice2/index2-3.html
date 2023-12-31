@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>CSSの基礎</title>
-    <link rel="stylesheet" href="reset.css">
+    <!--<link rel="stylesheet" href="reset.css">-->
     <link rel ="stylesheet" type="text/css" href="practice2-3.css">
   </head>
 
@@ -33,7 +33,7 @@
         <div class="main-img">
           2017.<br>
           <img src="../imgs/bookstore.jpg" alt="画像が表示されます"><br>
-          D.I.Blogは
+          D.I.Blogは<br>
         </div>
 
           記事中身<br>
@@ -41,18 +41,23 @@
           <!--２カラムorグリットレイアウトでどない？-->
           <!--検証上は↓にdisplay-flexかけるといい感じに横になるけど、なんかblockかかっててflexが消される-->
           <!--なんできかねえんだあ-->
-        <div class="list-wrap">
-          <div class="content1">
-            <img class="blog-image" src="../imgs/pic1.jpg">
-            <img class="blog-image" src="../imgs/pic1.jpg">
-            <img class="blog-image" src="../imgs/pic1.jpg">
-            <img class="blog-image" src="../imgs/pic1.jpg">
+        <div class="list-wrap" >
+          <!--<div class="content1">-->
+          <div class="content1" style="display:flex; justify-content: center;">
+            <!--<div class="content1-image-size">-->
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+            <!--</div>-->
           </div>
-          <div class="content2">
-            <img class="blog-image" src="../imgs/pic1.jpg">
-            <img class="blog-image" src="../imgs/pic1.jpg">
-            <img class="blog-image" src="../imgs/pic1.jpg">
-            <img class="blog-image" src="../imgs/pic1.jpg">
+          <div class="content2" style="display:flex; justify-content: center;">
+            <!--<div class="content2-image-size">-->
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+            <!--</div>-->
           </div>
         </div>
 
