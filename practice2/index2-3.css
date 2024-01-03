@@ -125,11 +125,38 @@ h3{
   font-size: 20px;
   padding-left: 20px;
 }
+
 .box2{
   float: left;
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.box2-text{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.box2-imgbox-background-color{
+  width: 100%;
   background-color: lightgray;
-  width: 80%;
-  height: 50%;
+  text-align: center;
+}
+
+.box2 img{
+  width: 250px;
+  margin:20px 10px -10px 10px;
+
+}
+
+.box2-imgbox{
+  display:inline-block;
+
+}
+.box2-imgbox p{
+  margin-top: 10px;
 }
 
 footer{
