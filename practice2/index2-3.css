@@ -91,11 +91,13 @@ main{
 
 h3{
   border-bottom:3px dotted lightgray;
+  margin-top:45px;
   width: 90%;
 }
 
 .main-sidebar ul{
   line-height: 40px;
+
 }
 
 .main-sidebar ul li{
