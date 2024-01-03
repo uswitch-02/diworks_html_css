@@ -3,81 +3,42 @@
   <head>
     <meta charset="UTF-8">
     <title>CSSの基礎</title>
-    <link rel ="stylesheet" type="text/css" href="practice2-3.css">
+    <link rel ="stylesheet" type="text/css" href="index2-3.css">
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+      <img src="../imgs/diblog_logo.jpg" alt="サンプル画像">
+      </div>
+
+      <div class="header-menu"></div>
+      <ul>
+        <li>トップ</li>
+        <li>プロフィール</li>
+        <li>D.I.Blogについて</li>
+        <li>投稿フォーム</li>
+        <li>お問い合わせ</li>
+        <li>その他</li>
+      </ul>
+      </div>
+    </header>
+
+
+
     <main>
-      <header>
-        <div class="header-top">
-        <img src="../imgs/diblog_logo.jpg" alt="サンプル画像">
-        </div>
+      <div class="main-blog">
+        <div class="box1">
 
-        <div class="header-bottom"></div>
-        <ul>
-          <li>トップ</li>
-          <li>プロフィール</li>
-          <li>D.I.Blogについて</li>
-          <li>投稿フォーム</li>
-          <li>お問い合わせ</li>
-          <li>その他</li>
-        </ul>
         </div>
-      </header>
-
-        <div class="main-box1">
-          プログラミングに役立つ情報
-        </div>
-
-        <div class="main-img">
-          2017.<br>
-          <img src="../imgs/bookstore.jpg" alt="画像が表示されます"><br>
-          D.I.Blogは<br>
-        </div>
-
-          記事中身<br>
-          <!--flexとかで横並びにできる？？-->
-          <!--検証上は↓にdisplay-flexかけるといい感じに横になるけど、なんかblockかかっててflexが消される-->
-          <!--display flaxを使用してそれっぽくしたパターンの記述-->
-        <div class="list-wrap" >
-          <div class="content1" style="display:flex; justify-content: center;">
-              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
-              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
-              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
-              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
-          </div>
-          <div class="content2" style="display:flex; justify-content: center;">
-              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
-              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
-              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
-              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
-          </div>
-        </div>
-        <!--テーブルを使用して画面を作った時の記述-->
-        <!--画像のサイズ変更ができない-->
-        <div class="list-wrap">
-          <table border="0" cellspacing="10">
-            <tr>
-              <td><img src="../imgs/pic1.jpg"></td>
-              <td><img src="../imgs/pic1.jpg"></td>
-              <td><img src="../imgs/pic1.jpg"></td>
-              <td><img src="../imgs/pic1.jpg"></td>
-            </tr>
-          </table>
-          <table border="0" cellspacing="10">
-            <tr>
-              <td><img src="../imgs/pic1.jpg"></td>
-              <td><img src="../imgs/pic1.jpg"></td>
-              <td><img src="../imgs/pic1.jpg"></td>
-              <td><img src="../imgs/pic1.jpg"></td>
-            </tr>
-          </table>
-        </div>
-        <!--テキストcss１０限の記述-->
-
-
-      <div class="sidebar">
         <div class="box2">
+
+        </div>
+      </div>
+
+
+      <div class="main-sidebar">
+        <div class="box3">
           <!--h３下線つける-->
           <h3>人気の記事</h3>
           <!--ここは・をnoneでけす-->
