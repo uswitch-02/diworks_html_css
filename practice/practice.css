@@ -44,7 +44,7 @@ main{
 
 .left {
   float: left;
-  background-color:skyblue;
+  background-color:lightblue;
   width: 70%;
   height:400px;
   margin-bottom: 40px;
@@ -52,7 +52,7 @@ main{
 
 .right{
   float: left;
-  background-color:blue;
+  background-color:skyblue;
   width:30%;
   height:400px;
   margin-bottom:40px;
