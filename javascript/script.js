@@ -216,3 +216,244 @@ for (var num=10; num >0; num--){
     }
   }
 
+for (var no1 =0; no1< 5; no1++){
+
+  for(var no2 =0; no2<=5; no2++){
+    if(no2 % 2 ==0){
+      document.write("★");}
+      else{
+        document.write("☆");}
+
+  }     document.write("<br>");
+}
+
+
+for(var xyz =1; xyz<30; xyz++){
+
+  if(xyz % 2 ==0){ document.write("2の倍数");}
+    else if(xyz % 3==0){document.write("3の倍数");}
+    else{
+    document.write(xyz);}
+    document.write("<br>");
+}
+
+for(var a = 10;a>= 0; a--){
+  document.write(a);
+  document.write("/");
+} document.write("<br>");
+
+for(var star = 1; star < 5; star++){
+  document.write("★");
+  document.write("<br>");
+}
+
+for(var month = 1; month <= 12; month ++){
+  document.write(month);
+  document.write("月/");
+}
+
+for(var age = 18; age <= 99; age++){
+  document.write(age + "歳")
+} document.write("<br>");
+
+for(var day = 1; day <= 31; day++){
+  document.write(day + "日");
+  document.write("<br>");
+}
+
+for(var num = 1;num <= 40; num++){
+  document.write(num+"番");
+  document.write("<br>");
+}
+
+var a2 = 3;
+switch (a2) {
+  case 0:
+    document.write("A");
+    // code
+    break;
+  case 1:
+    // code
+    document.write("B");
+    break;
+
+
+  default:
+    // code
+    document.write("C");
+}
+
+var a3 ="青";
+switch (a3) {
+  case '赤':
+    // code
+    document.write("赤組");
+    break;
+  case '白':
+    // code
+    document.write("白組");
+    break;
+  case '青':
+    // code
+    document.write("青組");
+    break;
+  default:
+    // code
+}
+
+
+var star = "☆";
+switch (star) {
+  case '★':
+    // code
+    document.write("黒い星です");
+    break;
+  case '☆':
+    // code
+    document.write("白い☆です") ;
+    break;
+
+  default:
+    // code
+    document.write("その他記号です");
+}
+
+var age =70;
+switch (age) {
+  case '70':
+    // code
+    document.write("古希");
+    break;
+  case '80':
+    // code
+    document.write("米寿");
+    break;
+
+
+  default:
+    // code
+    document.write(age + "歳");
+}
+
+var score = 99;
+
+switch (score) {
+  case '99':
+    // code
+    document.write("おしい！");
+    break;
+  case '100':
+    // code
+    document.write("満点です！");
+    break;
+
+  default:
+    // code
+    document.write(score + "点です！");
+}
+
+
+var a1 = 5;
+if(a1 > 0){
+  if(a1 < 10){
+    document.write("A");
+  }
+}
+
+var a2 = 10;
+if(a2 >= 5){
+  if(a2 <= 20){
+    document.write("B");
+  }
+}
+
+var a3 = 12;
+
+if(a3 > 0){
+  if(a3 < 10){document.write("A");
+  }else if(a3 > 10){
+    document.write("B");
+  }
+}
+
+var a4 = 5;
+if (a4 < 3){
+  document.write("A");
+}else if(a4 < 5){
+  document.write("B");
+}else{
+  document.write("C");
+}
+
+
+var a5 = 6; if(a5 > 10){
+  document.write("A");
+}else if(a5 < 5|| a5 == 6){
+  document.write("B");
+}else{
+  document.write("C");
+}
+
+
+var age = 18;
+var seibetsu = "女性";
+
+  if(age >= 18){
+  if(seibetsu == "女性"){
+    document.write("Aさん");
+  }else if(seibetsu == "男性"){
+    document.write("Bさん");
+  }else{
+    document.write("Cさん");
+  }
+}
+
+var month = 5;
+var day = 28;
+
+if(month <= 12){
+  if(day <= 15){
+    document.write("月の前半");
+  }else if(day >= 15){
+    document.write("月の後半");
+  }
+}
+
+var test1 = 80;
+var test2 = 96;
+
+if(test1>= 80){
+  if(test2 <= 89){
+    document.write("不合格");
+  }else if(test2 >= 90){
+    document.write("合格");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
