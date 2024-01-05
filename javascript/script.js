@@ -562,12 +562,15 @@ document.write(a8++);
 document.write("<br>");
 document.write(a8);
 
+var a9 = 1;
+document.write(a9++);
+document.write("<br>");
+document.write(a9++);
+document.write("<br>");
+document.write("<br>");
+document.write(a9);
 
-
-
-
-
-
+// syakyo3~5
 
 
 
