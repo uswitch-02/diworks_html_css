@@ -86,10 +86,168 @@ for(var star1 = 1; star1 <=4; star1++){
 document.write("<br>");
 document.write("問8");
 document.write("<br>");
-
-for(var star1 = 1; star1 <= 1; star1++){
-  document.write("★")
+// 行数の指定
+for (let i = 1; i <= 5; i++) {
+  // ローカル変数　★を格納するためのからの文字列
+    let pattern = '';
+    // 変数 j を1から i まで増加させながら、
+    // ★ を文字列 pattern に追加
+    // i の値によって、★ の数が異なります
+    for (let j = 1; j <= i; j++) {
+        pattern += '★';
+    }
+    document.write(pattern + "<br>");
 }
+
+// document.write("<br>");
+// document.write("for文を使用したプルダウンメニュー");
+
+// for(var i =18;i<=65; i++){
+//   document.write("<option>");
+//   document.write(i);
+//   document.write("</option>");
+// }
+
+
+document.write("問１円の面積を求める関数")
+document.write("<br>");
+// 再代入できないconstで書いてみる。
+// 意図せず値を書き換えることによる
+// エラーを未然に防ぐことができます。
+// constとvarの置き換えは可能。
+
+
+// 円の面積を求める関数
+// 与えられた半径をもとに円の面積を計算する
+function CircleArea(radius){
+  // 円周率を定義
+  const i = 3.14;
+  // 円周率×半径×半径
+  const area = i*radius*radius;
+  // 戻り値(計算された面積を関数の呼び出しもとに返す)
+  return area;
+}
+
+// 半径5cmの円を計算
+// 円の半径を指定
+  const radius1 = 5;
+    // CircleArea(radius)関数を使用してradius1に入れる
+  const area1 = CircleArea(radius1);
+  document.write("半径５ｃｍの円の面積は" + area1 +"㎠");
+  document.write("<br>")
+
+
+// 半径7cmの円を計算
+// 円の半径を指定
+  const radius2 = 7;
+  // CircleArea(radius)関数を使用してradius2に入れる
+  const area2 = CircleArea(radius2);
+  document.write("半径７ｃｍの円の面積は" + area2 + "㎠");
+  document.write("<br>");
+
+
+// 半径１０ｃｍの円を計算
+// 円の半径を指定
+  const radius3 = 10;
+    // CircleArea(radius)関数を使用してradius3に入れる
+  const area3 = CircleArea(radius3);
+  document.write("半径１０ｃｍの円の面積は" + area3 + "㎠");
+
+
+
+//いろんな書き方１
+document.write("<br>");
+document.write("<br>");
+document.write("いろんな書き方２")
+document.write("<br>");
+
+function menseki(hankei,ensyuritu){
+return "面積は"+hankei*hankei*ensyuritu+" ㎠です。";
+}
+document.write(menseki(5,3.14));
+document.write("<br>");
+document.write(menseki(7,3.14));
+document.write("<br>");
+document.write(menseki(10,3.14));
+
+
+//いろんな書き方３
+document.write("<br>");
+document.write("<br>");
+document.write("いろんな書き方３")
+document.write("<br>");
+
+// radiusに引数として半径の値を与える
+function menseki(radius){
+  // 円周率
+  const pi = 3.14;
+  const area = pi * radius * radius;
+  // 結果を乗数点以下２桁に制限して返す
+  return area.toFixed(2);
+}
+
+document.write("面積は：" + menseki(5) + "㎠");
+document.write("<br>");
+document.write("面積は：" + menseki(7) + "㎠");
+document.write("<br>");
+document.write("面積は：" + menseki(10) + "㎠");
+document.write("<br>");
+
+
+document.write("<br>");
+document.write("<br>");
+document.write("問２")
+document.write("<br>");
+
+function TotalPrice(otona, kodomo, otonaPrice = 500, kodomoPrice =200){
+  const total = (otona * otonaPrice + kodomo * kodomoPrice);
+  return total;
+}
+
+const a = TotalPrice(2,4);
+const b = TotalPrice(1,5);
+const c = TotalPrice(3,7);
+
+document.write(a + "円です。<br>");
+document.write(b + "円です。<br>");
+document.write(c + "円です。<br>");
+
+
+document.write("<br>");
+document.write("<br>");
+document.write("合計金額は～円ですをコード上で何回も書かないで済む方法はないか")
+document.write("<br>");
+
+// デフォルトで大人価格と子供価格を定義
+function Totalprice(otona,kodomo,otonaPrice = 500,kodomoPrice=200){
+  const total = (otona*otonaPrice + kodomo*kodomoPrice);
+  return total;
+}
+// グループごとの情報をオブジェクトとして持つ配列groupを定義
+// クラス：設計図
+// インスタンス：実際に作った物
+// オブジェクト：モノ（クラスとかインスタンスとかをふんわりと表現したもの）
+const groups = [
+  // グループ名：name,人数：otona,kodomo
+  { name:'A', otona:2, kodomo:4},
+  { name:'B', otona:1, kodomo:5},
+  { name:'C', otona:3, kodomo:7}
+  ];
+
+
+// forループを使用してgroupの配列の各要素にアクセス
+// groupToal関数を使って、合計金額けいさん。
+for (let i =0; i< groups.length; i++){
+  // groups[i] は、配列 groups 内の特定の要素を指す。
+  const groupName = groups[i].name;
+  // i が 0 から始まり、groups.length - 1（配列の要素数から1引いた数）まで繰り返す。
+  // 0.1.2までしか使えない３はないからgroup.length-1
+  const groupTotal = TotalPrice(groups[i].otona, groups[i].kodomo);
+  document.write(groupName + "グループの合計金額は"　+ groupTotal + "円です。<br>");
+}
+
+
+
 
 
 
