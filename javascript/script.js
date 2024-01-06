@@ -1,20 +1,20 @@
-// document.write("Hello World");
-// document.write("私の名前は田中です。");
-// document.write("年齢は25歳です。");
-// document.write("あいうえお<br>");
-// document.write("かきくけこ<br>");
-// document.write("さしすせそ<br>");
-// document.write("月曜日<br>火曜日<br>水曜日")
-// document.write("<h1>あいうえお</h1>");document.write("<p>かきくけこ</p>");document.write("さしすせそ");
-// alert("別のページに移動します。");
-// confirm("別のページに移動してもいいですか？");
-// alert("このページを離れようとしています");
-// confirm("ログアウトしますか？")
-// function fruitsPrice(apple , orange){
+document.write("Hello World");
+document.write("私の名前は田中です。");
+document.write("年齢は25歳です。");
+document.write("あいうえお<br>");
+document.write("かきくけこ<br>");
+document.write("さしすせそ<br>");
+document.write("月曜日<br>火曜日<br>水曜日")
+document.write("<h1>あいうえお</h1>");document.write("<p>かきくけこ</p>");document.write("さしすせそ");
+alert("別のページに移動します。");
+confirm("別のページに移動してもいいですか？");
+alert("このページを離れようとしています");
+confirm("ログアウトしますか？")
+function fruitsPrice(apple , orange){
 
-// }return (apple*80)+(orange+60);
-// document.write(fruitsPrice(3,5)+"円"+"<br>");
-// document.write(fruitsPrice(6,8)+"円"+"<br>");
+}return (apple*80)+(orange+60);
+document.write(fruitsPrice(3,5)+"円"+"<br>");
+document.write(fruitsPrice(6,8)+"円"+"<br>");
 
 function fruitsPrice(apple, orange) {
   var totalPrice = (apple * 80) + (orange * 60);
