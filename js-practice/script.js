@@ -61,6 +61,30 @@ for(var star1 = 1; star1 <=3; star1++){
   }
 }
 
+// なおし！
+document.write("<br>");
+document.write("問6");
+// 外側のループを設定する。
+// star1の初期値を1に設定する。
+// star1が３以下の値まで１ずつ増加しながらループする。
+for(var star1 = 1; star1 <=3; star1++){
+  // 変数lineを宣言し初期値としてからの文字列が代入されている。
+  // 空の文字列を設定する理由：後でこの変数にテキストを追加していくことができる。
+  let line="";
+  // 内側のループを設定する
+  for(let j = 0; i<5; j++){
+    if(j%2 === 0){
+      line += "★";
+    }else{
+      line+="☆";
+    }
+  }
+  document.write(line);
+  }
+
+
+
+
 document.write("<br>");
 document.write("問7");
 for(var star1 = 1; star1 <=4; star1++){
