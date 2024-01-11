@@ -100,7 +100,28 @@ for(var star1 = 1; star1 <=4; star1++){
 
 document.write("<br>");
 document.write("問７");
-
+// 初期値iに0を設定する
+// 外枠の増減式。行に表示する項目の個数の指定。０～４
+// iは４以下まで１ずつ増加しながら、増減式を繰り返す。
+for(var i = 0; i<=4; i++){
+  // lineに空の文字列を定義
+  let line="";
+  // 内側の増減式。列の指定。行に表示する項目の個数の指定。
+  for(var j = 0; j<=5; i++){
+    // もしjを２で割った時、余りが０であれば
+    // （今回はデータ型も同じの場合とした）
+    if(j % 2 === 0){
+      // 文字列lineに★を代入する
+      // +=は右の値を左の値に代入する
+      line += "★"
+      // それ以外の場合は
+    }else{
+      // 空の変数lineに☆を代入する
+      line += "☆"
+    }
+    // html画面に変数lineを表示する
+  }document.write(line);
+}
 
 
 
@@ -203,8 +224,8 @@ document.write("<br>");
 // radiusに引数として半径の値を与える
 function menseki(radius){
   // 円周率
-  const pi = 3.14;
-  const area = pi * radius * radius;
+  // const pi = 3.14;
+  const area = 3.14 * radius * radius;
   // 結果を乗数点以下２桁に制限して返す
   return area.toFixed(2);
 }
@@ -222,8 +243,8 @@ document.write("<br>");
 document.write("問２")
 document.write("<br>");
 
-function TotalPrice(otona, kodomo, otonaPrice = 500, kodomoPrice =200){
-  const total = (otona * otonaPrice + kodomo * kodomoPrice);
+function TotalPrice(otona, kodomo){
+  const total = (otona * 500 + kodomo * 200);
   return total;
 }
 
