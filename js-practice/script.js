@@ -46,22 +46,9 @@ for(var star1 = 1; star1 <=4; star1++){
   }
 }
 
-document.write("<br>");
-document.write("問6");
-for(var star1 = 1; star1 <=3; star1++){
-  document.write("<br>");
-  for(var star2 = 1; star2 <=1; star2++){
-    document.write("★");
-  }
-  for(var star3 = 1; star3 <=1; star3++){
-    document.write("☆");
-  }
-    for(var star2 = 1; star2 <=1; star2++){
-    document.write("★");
-  }
-}
-
 // なおし！
+// ※前回のチェックの時は、forの入れ子構造の事が定着していなかった。
+//行と列が表示されていることに対しての説明が出てこなかった。
 document.write("<br>");
 document.write("問6");
 // 外側のループを設定する。
@@ -72,13 +59,18 @@ for(var star1 = 1; star1 <=3; star1++){
   // 空の文字列を設定する理由：後でこの変数にテキストを追加していくことができる。
   let line="";
   // 内側のループを設定する
-  for(let j = 0; i<5; j++){
-    if(j%2 === 0){
+  // 変数Jに初期値0を設定する　ｊは５未満までｊに設定した初期値に１足しながらループする。
+  for(let j = 0; j<= 5; j++){
+    // もし、ｊを２で割った時に余りが0であれば、
+    if(j % 2 === 0){
+      // 最初に設定した空の文字列に★を代入する。+=は左の値に右の値を代入する。
       line += "★";
+      // そうでないなら、同じく最初に設定した空の文字列に☆を代入する。
     }else{
       line+="☆";
     }
   }
+  // html画面上に文字列lineを表示する。
   document.write(line);
   }
 
@@ -105,6 +97,13 @@ for(var star1 = 1; star1 <=4; star1++){
     document.write("★");
   }
 }
+
+document.write("<br>");
+document.write("問７");
+
+
+
+
 
 // ↑絶対もっと簡単な記述できる
 document.write("<br>");
