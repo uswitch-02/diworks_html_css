@@ -1,15 +1,15 @@
 document.write("問1");
 document.write("<br>");
 
-for(var i=1; i<=5; i++){
+for(var i = 1; i <= 5; i++){
   document.write("★");
 }
 
 document.write("<br>");
 document.write("問2");
-for(var star1 = 1; star1 <=2; star1++){
+for(var star1 = 1; star1 <= 2; star1++){
   document.write("<br>");
-  for(var star2 = 1; star2 <=3; star2++){
+  for(var star2 = 1; star2 <= 3; star2++){
     document.write("★");
   }
 }
@@ -18,9 +18,9 @@ for(var star1 = 1; star1 <=2; star1++){
 document.write("<br>");
 document.write("問3");
 
-for(var star1 =1; star1 <= 2; star1++){
+for(var star1 = 1; star1 <= 2; star1++){
   document.write("<br>");
-  for(var star2= 1; star2 <=5; star2++){
+  for(var star2 = 1; star2 <= 5; star2++){
     document.write("☆");
     }
 }
@@ -31,17 +31,17 @@ document.write("問4");
 document.write("<br>");
 
 
-for(var star1=1; star1<=5; star1++){
-  for(var star2=1; star2<=5; star2++){
+for(var star1 = 1; star1 <= 5; star1++){
+  for(var star2 = 1; star2 <= 5; star2++){
     document.write("★");
   }
   document.write("<br>");
 }
 
 document.write("問5");
-for(var star1 = 1; star1 <=4; star1++){
+for(var star1 = 1; star1 <= 4; star1++){
   document.write("<br>");
-  for(var star2 = 1; star2 <=3; star2++){
+  for(var star2 = 1; star2 <= 3; star2++){
     document.write("★");
   }
 }
@@ -55,7 +55,7 @@ document.write("<br>");
 // 外側のループを設定する。
 // star1の初期値を1に設定する。
 // star1が３以下の値まで１ずつ増加しながらループする。
-for (var star1 = 1; star1 <=3; star1++) {
+for (var star1 = 1; star1 <= 3; star1++) {
   // 変数lineを宣言し初期値としてからの文字列が代入されている。
   // 空の文字列を設定する理由：後でこの変数にテキストを追加していくことができる。
   let line = "";
@@ -67,7 +67,7 @@ for (var star1 = 1; star1 <=3; star1++) {
       // 最初に設定した空の文字列に★を代入する。+=は左の値に右の値を代入する。
       line += "★";
       // そうでないなら、同じく最初に設定した空の文字列に☆を代入する。
-    }else{
+    } else {
       line += "☆";
     }
   }
@@ -93,6 +93,9 @@ for (var star1 = 1; star1 <=3; star1++) {
 // 採用担当者がコードを見た時も、きれいに書くっていうのが定着してない。一緒にやるうえで配慮がないとか、共通意識的な部分で、マイナスに感じるらしい。
 //基本規則の定着は必須。コードを書くたびにチェックするように。
 
+
+document.write("lineに代入を使用して出力したパターン");
+document.write("<br>");
 for (var i = 0; i < 3; i++) {
     line = ""
 
@@ -103,8 +106,9 @@ for (var i = 0; i < 3; i++) {
     } else {
       line = "☆";
     }
-
+  document.write(line);
   }
+  document.write("<br>");
 }
 
 
@@ -156,9 +160,9 @@ document.write("<br>");
 // 初期値iに0を設定する
 // 外枠の増減式。行に表示する項目の個数の指定。０～４
 // iは４以下まで１ずつ増加しながら、増減式を繰り返す。
-for(var i = 0; i<=3; i++){
+for(var i = 0; i <= 3; i++){
   // lineに空の文字列を定義
-  let line="";
+  let line = "";
   // 内側の増減式。列の指定。行に表示する項目の個数の指定。
   // jに初期値０を設定する。ｊは値を１ずつ増加させながら５未満になるまでループする。
   for(var j = 0; j < 5; j++){
@@ -169,7 +173,7 @@ for(var i = 0; i<=3; i++){
       // +=は右の値を左の値に代入する
       line += "★"
       // それ以外の場合は
-    }else{
+    } else {
       // 空の変数lineに☆を代入する
       line += "☆"
     }
@@ -178,6 +182,27 @@ for(var i = 0; i<=3; i++){
   document.write(line);
   document.write("<br>");
 }
+
+document.write("代入を使用した出力パターン できた！");
+document.write("<br>");
+
+for(var i = 0; i < 4; i++){
+
+  let line = "";
+
+  for(var j = 0; j < 5; j++){
+    if(j % 2 === 0){
+      line = "★";
+    } else {
+      line = "☆";
+    }
+    document.write(line);
+  }
+  document.write("<br>");
+}
+
+
+
 
 document.write("<br>");
 document.write("問8");
@@ -279,17 +304,14 @@ function menseki(radius){
 // 変数　areaに円の面積を出す式を指定。
   const area = 3.14 * radius * radius;
   // 結果を乗数点以下２桁に制限して返す
-  return area;
+  return ("面積は" + area + "㎠" + "<br>");
 }
 // html画面上に“”で囲った部分の文字面積はと㎠を文字列として表示
 // menseki1関数に異なる半径（5,7,10)を渡して、
 // 計算された円の面積が表示されます。
 document.write("面積は：" + menseki(5) + "㎠");
-document.write("<br>");
-document.write("面積は：" + menseki(7) + "㎠");
-document.write("<br>");
-document.write("面積は：" + menseki(10) + "㎠");
-document.write("<br>");
+document.write( menseki(7) );
+document.write( menseki(10) );
 
 
 document.write("<br>");
@@ -311,9 +333,9 @@ function TotalPrice(otona, kodomo){
 // 関数内の処理が実行されます。
 // そして、各呼び出し元で関数が return を通じて返した結果が
 // 変数 a, b, c に代入されます。
-const a = TotalPrice(2,4);
-const b = TotalPrice(1,5);
-const c = TotalPrice(3,7);
+const a = TotalPrice(2, 4);
+const b = TotalPrice(1, 5);
+const c = TotalPrice(3, 7);
 // 各変数a,b,cの値（計算結果）がhtml上で表示されます。
 document.write(a + "円です。<br>");
 document.write(b + "円です。<br>");
