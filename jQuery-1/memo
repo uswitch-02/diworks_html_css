@@ -18,6 +18,17 @@ cssは静的な変化の指定、jQueryは動的な変化を指定している�
 jQueryで色変化をさせたため、役割がわかりずらかったが、
 基本はcssは静的な指定。jQuery動的な変化。と役割は分かれている。
 
+課題作成時参考サイト
+https://wind-mill.co.jp/jquery-slideshow-bxslider/
+bxsliderの設定について。何が何を設定できるか
+https://www.sendai-kuraso.com/work/html-css-js-php/bxslider-carousel.html
+スライドをレスポンシブ対応するときの記述が紹介されている
+
+
+
+
+
+
 ・セレクタと呼ばれる部分。
 [id][class]「子」などを記述し、対象となる部分を指定する。
 ・メソッドと呼ばれる部分

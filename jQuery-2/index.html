@@ -10,12 +10,21 @@
     <script>
       $(document).ready(function(){
         $(".abc").bxSlider({
+          // スライドの自動再生を選択します
+          // デフォルトはfalse
           auto: true,
-          mode: 'fade',
-          speed: 1000,
+          // スライドの動作を選択します
+          // ’horizontal’、’vertical’、’fade’があって、
+          // それぞれ横・縦・フェードで画像が切り替わります
+          mode: 'horizontal',
+          // スライド動作の速度を指定します。1000=1秒
+          speed: 2000,
+          // スライドのサイズを
           slideWidth: 400
         });
       });
+
+
     </script>
   </head>
 
@@ -23,7 +32,7 @@
     <div class="abc">
       <div><img src= "../imgs/pic1.jpg"></div>
       <div><img src= "../imgs/pic2.jpg"></div>
-      <div><img src= "../imgs/pic3.jag"></div>
+      <div><img src= "../imgs/pic3.jpg"></div>
     </div>
   </body>
 </html>
