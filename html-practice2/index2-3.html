@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <title>CSSの基礎</title>
     <link rel ="stylesheet" type="text/css" href="index2-3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".abc").bxSlider({
+          auto: true,
+          mode: 'horizontal',
+          speed: 2000,
+          slideWidth: 1500
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -55,7 +68,12 @@
           <div class="box1">
             <h1 class="main-blog-title">プログラミングに役立つ書籍</h1>
             <div class="date">2017年1月15日</div>
-            <img src="../imgs/bookstore.jpg" alt="メイン画像"></img>
+              <div class="abc">
+                <div><img src= "../imgs/jQuery_image1.jpg"></div>
+                <div><img src= "../imgs/jQuery_image2.jpg"></div>
+                <div><img src= "../imgs/jQuery_image3.jpg"></div>
+              </div>
+            <!--<img src="../imgs/bookstore.jpg" alt="メイン画像"></img>-->
             <div class="box1-text">D.I.BlogはD.I.Worksが提供する演習課題です。</div>
           </div>
 
