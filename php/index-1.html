@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang ="ja">
+<html lang = "ja">
+  
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>お問い合わせフォームを作る</title>
+    <link rel="stylesheet" type="text/css" hlef="style.css">
   </head>
   
   <body>
-    <main>
-      <h1>お問い合わせフォーム</h1>
-      <form method= "text"
-    </main>
+
+    <h1>お問い合わせフォーム</h1>
+    <form method= "post" action= "mail_confirm.php">
+      <div>
+        <label>名前</label>
+        <br>
+        <input type= "text" class= "text" size= "35" name= "name">
+        <br>
+      </div>
+
+      <div>
+        <label>メールアドレス</label>
+        <br>
+        <input type= "text" class= "text" size="35" name= "mail">
+        <br>
+      </div>
+
+      <div>
+        <label>年齢</label>
+        <br>
+        <selet class= "down" name="age">
+          <option>選択してください</option>
+          <script>
+            for(var i = 18; i <= 65; i++){
+              document.write("<option value= "+ i +">"+ i +"歳</option>");
+              document.write("i");
+              document.write("</option>");
+            }
+          </script>
+        </select>
+      </div>
+      
+      <div>
+        <label>コメント</label>
+        <br>
+        <textarea rows= "7" cols= "35" name= "comments"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="送信">
+      </div>
+    </form>
+
   </body>
 </html>
