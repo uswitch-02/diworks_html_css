@@ -41,8 +41,9 @@ form div {
  .submit {
   border:1px solid lightgray;
   padding: 4px 10px;
+  /*フォントの色*/
   color: white;
   background-color: #bfbfbf;
   border-radius: 5px;
-  bottom:2px solid gray;
+  border-bottom:2px solid gray;
  }
