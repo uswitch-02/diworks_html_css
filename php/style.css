@@ -22,18 +22,27 @@ form {
   width: 500px; /* 必要に応じて幅を調整してください */
   margin: 0 auto;
   background-color: #fbfbfb;
-  border: 4px solid #c3c3c3 ;
+  border: 3px solid #ebebeb ;
   border-radius: 10px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+}
+
+form div {
+  padding: 15px;
 }
 
 .text, textarea, .dropdown{
-
-  margin-bottom: 30px;
+  padding:5px;
+  border: 1px solid #c3c3c3 ;
+  padding: 5px;
+  color: #999;
+  background: #fff;
 }
 
  .submit {
-   margin-top: 30px;
+  border:1px solid lightgray;
+  padding: 4px 10px;
+  color: white;
+  background-color: #bfbfbf;
+  border-radius: 5px;
+  bottom:2px solid gray;
  }
