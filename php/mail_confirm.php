@@ -26,10 +26,14 @@
         <!--index.htmlから引き渡された「mail」という箱を表示するという意味-->
         <? php echo $_post['mail']; ?>
       </p>
-
+        <br>
+        <? php echo $_post['age']; ?>
       <p>
-
+        <br>
+        <? php echo $_post['comments']; ?>
       </p>
+
+      <form action ="insert.php" method="post"></form>
     </div>
   </body>
 
