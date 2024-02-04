@@ -45,5 +45,6 @@ form div {
   color: white;
   background-color: #bfbfbf;
   border-radius: 5px;
+  /*ボタンの陰になってる部分*/
   border-bottom:2px solid gray;
  }
