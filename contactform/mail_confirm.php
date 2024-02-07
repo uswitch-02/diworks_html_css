@@ -32,13 +32,13 @@
         <br>
         <? php echo $_POST ['comments']; ?>
       </p>
-
+      <!--どこに戻るか-->
       <form action = "index.html">
-        <input type = "submit" class = "button1" value = "登録する">
+        <input type = "submit" class = "button1" value = "戻って修正する">
       </form>
 
       <form action = "insert.php" mathod = "post">
-        <input type = "submit" class = "button2" value = "戻って修正する">
+        <input type = "submit" class = "button2" value = "登録する">
         <input type = "hidden" value = "<? php echo $_POST ['name']; ?>" name = "name">
         <input type = "hidden" value = "<? php echo $_POST ['mail']; ?>" name = "mail">
         <input type = "hidden" value = "<? php echo $_POST ['age']; ?>" name = "age">
